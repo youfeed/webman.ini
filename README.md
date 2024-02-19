@@ -2,6 +2,7 @@
 
 > 其实代码只有几行，但是如果你写在`app/functions.php`配置文件无法使用，如果你写在`support/helpers.php`里面是有效的但是你项目`composer update`会被重置，建议老大给这个函数变成内置
 
+> `composer require youloge/ini`
 
 #### 使用
 

@@ -7,11 +7,7 @@ if(!function_exists('ini')){
   {
       static $config = [];
       if (!$config) {
-        try {
-          $config = parse_ini_file(base_path().'/.env',true);
-        } catch (\Throwable $th) {
-          $config = [];
-        }
+        $config = @parse_ini_file(base_path().'/.env',true) ?? [];
       }
       @[$one,$two] = explode('.', $keys);
       @[$one=>[$two=>$value]] = $config;
