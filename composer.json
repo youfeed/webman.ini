@@ -1,0 +1,16 @@
+{
+  "name": "youloge/ini",
+  "type": "library",
+  "license": "MIT",
+  "description": "Webman plugin youloge/ini",
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Youloge\\Ini\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
