@@ -16,6 +16,6 @@ if(!function_exists('ini')){
     }
     @[$one,$two] = explode('.', $keys);
     @[$one=>$item] = $config;
-    return ($two === null ? $item : $item[$two]) ?? $def;
+    return $two === null ? $item ?? $def : $item[$two] ?? $def;
   }
 }
